@@ -1,0 +1,81 @@
+.body {
+    background-color: #2B076E;
+    color: #E0E0E0;
+}
+
+.mainsection {
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainsection>h3 {
+    text-align: center;
+}
+@media screen and (max-width: 657px) {
+    .mainsection {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+}
+
+.illustration {
+    width: 50%;
+    z-index: 4;
+}
+
+.section1, .section2, .section3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+}
+
+.section1, .section3 {
+    flex-direction: row;
+}
+
+.section2 {
+    flex-direction: row-reverse;
+}
+
+@media screen and (min-width: 1281px) {
+.valueProp {
+    width: 500px;
+}
+}
+
+@media screen and (max-width: 1280px) {
+    .section1, .section2, .section3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .illustration {
+        width: 80%;
+    }    
+
+    .microDesign, .microDesign1 {
+        display: none;
+    }
+}
+
+.microDesign {
+    position: absolute;
+    right: 0vw;
+    top: 520vh;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.microDesign1 {
+    position: absolute;
+    left: 0vw;
+    top: 370vh;
+    z-index: 0;
+    overflow: hidden;
+}

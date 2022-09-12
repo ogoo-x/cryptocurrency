@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Rubik", "Raleway", sans-serif;
+  background-color: rgb(13 13 43);
+  letter-spacing: 0.055em;
+  max-width: 100vw;
+  color: white;
+}
+
+@media screen and (max-width: 1109px) {
+  h1 {
+    font-size: 48px !important;
+  }
+  
+  h2 {
+    font-size: 32px !important;
+  }
+  
+  h3 {
+    font-size: 24px !important;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 1110px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700  ;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 16px;
+      line-height:1.4;
+    font-weight: 400 !important;
+  }
+}
+
+/* Genric Styling */
+button, .button, .buttonIcon {
+  cursor: pointer;
+}
+
+.buttonIcon{
+  background: #3671E9; 
+  border-radius: 32px; 
+  border: none;
+  padding: 14px 32px;
+  color:white;
+  font-size: 16px;
+  font-weight: 500px;
+  display:flex;
+  align-items: center;
+}
+
+.button {
+  background: #3671E9; 
+  border-radius: 32px; 
+  border: none;
+  padding: 14px 32px;
+  color:white;
+  font-size: 16px;
+  font-weight: 500px;
+  display:flex;
+  align-items: center;
+  max-width: 200px;
+}
+
+.button:hover, .buttonIcon:hover {
+  background: #1749ae;
+} 
+button:hover {
+  background: #e2e2e2;
+  transition: 0.2s ease-in;
+}
+
+/* hamburger functionality */
+.navigationclose {
+  margin-left: -1100px;
+  transition: ease-out 0.4s;
+}
+
+
+.navigationopen {
+  margin-left: 0;
+  transition: ease-in 0.4s;
+}
+
+.normal {
+  transition: 0.3s;
+  transform: rotateX(0);
+}
+
+.ex {
+  transition: 0.3s;
+  transform: rotate(45deg) translate(5px 5px);
+
+}
+
+.ex2 {
+  transition: 0.3s;
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.rotate180 {
+  transition: 0.3s;
+  transform: rotate(20deg);
+}
+
+/* onclick functionality of Coin cards */
+.active {
+  transition: 0.2s ease-in;
+  background-color: rgba(57,23,119);
+  color: #fff;
+}
+
+.notactive {
+  background-color: #fff;
+  color: black;
+  transition: 0.2s ease-in;
+}
+
+.visible {
+  opacity:1;
+}
+
+.notvisible {
+  opacity: 0;
+}
